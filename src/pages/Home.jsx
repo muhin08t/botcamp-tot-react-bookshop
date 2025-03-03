@@ -35,7 +35,7 @@ const Home = () => {
     <h2 className="banner-content-third-title lg:text-2xl">Kishore Book House</h2>
     <button className='banner-content-btn'>Buy book</button>
     </div>
-    <img src="/banner1.jpg" className="banner-img-part lg:banner-img-part-lg xl:banner-img-part-xl" />
+    <img src="/banner2.jpg" className="banner-img-part lg:banner-img-part-lg xl:banner-img-part-xl" />
   </div>
   <div id="item2" className="carousel-item w-full">
     <div className="banner-content-part lg:banner-content-part-lg"> 
@@ -44,7 +44,7 @@ const Home = () => {
     <h2 className="banner-content-third-title lg:text-2xl">Kishore Book House</h2>
     <button className='banner-content-btn'>Buy book</button>
     </div>
-    <img src="/banner2.jpg" className="banner-img-part lg:banner-img-part-lg xl:banner-img-part-xl" />
+    <img src="/banner1.jpg" className="banner-img-part lg:banner-img-part-lg xl:banner-img-part-xl" />
   </div>
   <div id="item3" className="carousel-item w-full">
     <div className="banner-content-part lg:banner-content-part-lg"> 
@@ -53,7 +53,7 @@ const Home = () => {
     <h2 className="banner-content-third-title lg:text-2xl">Kishore Book House</h2>
     <button className='banner-content-btn'>Buy book</button>
     </div>
-    <img src="/banner1.jpg" className="banner-img-part lg:banner-img-part-lg xl:banner-img-part-xl" />
+    <img src="/banner2.jpg" className="banner-img-part lg:banner-img-part-lg xl:banner-img-part-xl" />
   </div>
 </div>
 <div className="flex w-full justify-center gap-2 py-2">
