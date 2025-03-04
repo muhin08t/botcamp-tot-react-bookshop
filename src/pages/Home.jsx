@@ -2,6 +2,7 @@ import React from "react";
 import { createContext, useState, useEffect } from "react";
 import BookDetails from "../components/BookDetails";
 import { useNavigate } from 'react-router-dom';
+import RatingComponent from './../components/RatingComponent';
 
 const Home = () => {
   const [books, setBooks] = useState([]);
@@ -79,9 +80,13 @@ const Home = () => {
                 </figure>
                 <div className="card-body items-center text-center px-1">
                   <h2 className="card-title"> {item.bookName} </h2>
-                  <h3 className="font-semibold"> {item.author}</h3>
-                  <p>{item.category}</p>
-                  <p> Rating: {item.rating} </p>
+                  <h3 className=""> By <span className="text-blue-400"> {item.author} </span></h3>
+                  <div className="flex justify-between items-center mb-3">
+                  <div className="badge badge-info p-3 text-white">{item.category}</div>
+                  <div className="ml-5"> <RatingComponent rating={item.rating} /> </div>
+                  
+                  </div>
+                
                   <div className="card-actions">
                     {item.tags.map((tItem, tIndex) => {
                       return (

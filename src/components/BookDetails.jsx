@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import RatingComponent from './RatingComponent';
 
 const BookDetails = () => {
   const location = useLocation();
@@ -32,9 +33,9 @@ const BookDetails = () => {
         <h3 className="pt-2 font-semibold">
           Category: <span className="text-blue-400"> {book.category} </span>
         </h3>
-        <h3 className="pt-2 font-semibold">
-          Rating: <span className="">{book.rating}</span>{" "}
-        </h3>
+        <div className="pt-2 flex items-center gap-2">
+          <span className="font-semibold">Rating: </span> <RatingComponent rating={book.rating} />
+        </div>
         <h3 className="pt-2 max-w-96">
           {" "}
           <span className="font-bold">Review: </span>{" "}
